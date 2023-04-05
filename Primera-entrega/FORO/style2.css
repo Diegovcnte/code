@@ -1,0 +1,133 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  background: url(img/5.png);   
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+.retro{
+  width: 500px;
+  margin: 0px auto;
+  background:linear-gradient(
+  #0000ff 15%,
+  #aaffffff 35%,
+  #ccffff 45%,
+  #000011 55%,
+  #000000 52%,
+  #000044 60%,
+  #000066 70%,
+  #000099 80%,
+  #0000ff 85%
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  font-size: 100px;
+  font-family: 'Fredoka',cursive;
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+  -webkit-text-stroke: 2px #a8a8a8;
+
+  animation: sombra 2s infinite;
+}
+
+@keyframes sombra {
+  0%{filter: drop-shadow(10px 10px 10px #ff0000);}
+  50%{filter: drop-shadow(10px 10px 10px #000000);}
+  100%{filter: drop-shadow(10px 10px 10px #ff0000);}
+}
+
+ section{
+  display: flex;
+  width: 400px;
+  height: 230px;
+  margin: 0px auto;
+}
+section img{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+section img:hover{
+  cursor: crosshair;
+  width: 50px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.comentarios{
+  margin: 20px 0;
+}
+
+.form_comentarios textarea {
+  width: 100%;
+  height: 84px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 84px;
+  max-height: 300px;
+  padding: 10px;
+  font-family: 'Roboto Condensed',sans-serif;
+  line-height: 30px;
+  border: 1px solid #4b65b1;
+  margin-bottom: 20px;
+}
+
+.form_comentarios .btn{
+  background: #4b65d1;
+  font-family: 'Roboto Condensed ',sans-serif;
+  border-radius: 0;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.form_comentarios .btn:hover{
+  box-shadow: 0px 0px 9px rgba(0,0,0,.35);
+}
+.media {
+  border-top: 1px solid#bfbfbf;
+  padding-top: 20px;
+}
+
+.media img{
+  margin-right: 20px;
+}
+
+.c-slide{
+  background-color:rgba(224, 40, 8, 0.911);
+  padding: 60px;
+  height: 200px;
+}
+
+.media .nombre{
+  color:#1403ffd7;
+  margin-bottom: 0  ;
+}
+
+.media .nombre span{
+  font-size: 12px;
+  color:#464646;
+  margin-left: 10px;
+}
+
+.media .comentario{
+  margin-top: 10px;
+}
+
+.media .botones{
+  margin-bottom: 10px;
+}
+
+.media .botones a {
+  color:#000000;
+  font-size: 14px;
+  margin-left: 20px;
+}
